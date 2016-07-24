@@ -1,0 +1,54 @@
+[home-comp] {
+
+  background-color: color(green);
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  overflow: auto;
+
+  .top-w {
+    height: 250px;
+    background-image: url("/static/images/map.jpg");
+    background-position: center;
+    overflow: hidden;
+    text-align:center;
+    img {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 100px;
+    }
+  }
+
+  .city-w {
+    background-color: color(white);
+    padding: 10px 5%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .bottom-w {
+    //border: 1px solid;
+    max-width: 400px;
+    margin: 60px auto;
+    text-align: center;
+
+    @include phone {
+      max-width: 70%;
+    }
+
+    .text {
+      color: color(white);
+    }
+
+    .btn {
+      background-color: color(darkgray);
+      color: color(white);
+      padding: 20px 0;
+      margin-top: 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+}

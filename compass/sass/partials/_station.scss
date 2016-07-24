@@ -1,0 +1,172 @@
+[station-comp] {
+
+  background-color: color(grey);
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  overflow: auto;
+
+  .header-w {
+    background-color: color(green);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    color: color(white);
+    overflow: auto;
+    padding: 4px 5%;
+    height: 130px;
+
+    .menu {
+      float: left;
+      width: 100%;
+      clear: both;
+
+      img {
+        width: 50px;
+      }
+    }
+    .logo-w {
+      float: right;
+      font-weight: bold;
+    }
+
+    .icon {
+      font-size: 2em;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .text {
+      color: color(white);
+    }
+
+    .sttion-w {
+      //border: 1px solid;
+      text-align: center;
+      .sttion-name {
+        color: color(darkgray);
+        font-weight: bold;
+        font-size: 1.8em;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .schdl-lst, .loading-w {
+    margin: 0 auto;
+    margin-top: 170px;
+    max-width: 600px;
+    padding-bottom: 30px;
+    //border: 1px solid;
+  }
+
+  .loading-w {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  [schedule-item] {
+    @include display-flex();
+    //cursor: pointer;
+    background-color: color(white);
+    margin-top: 10px;
+    min-height: 120px;
+
+    .label {
+      color: grey;
+      font-size: 0.8em;
+      margin-bottom: 5px;
+    }
+
+    .left-w {
+      padding: 10px 3%;
+      border-right: 1px solid color(grey);
+      margin-right: 4%;
+      width: 20%;
+      position: relative;
+
+      .name {
+        font-weight:bold;
+        font-size: 1em;
+      }
+
+      .trck-w {
+        background-color: color(black);
+        color: color(white);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 10%;
+        font-size: 0.8em;
+        width: 40%;
+      }
+      .trck {
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        right: 10%;
+        top: 8px;
+      }
+    }
+  }
+
+  .right-w {
+    padding: 10px 3%;
+    @include display-flex();
+
+    .arrow {
+      margin: 30px 24% 0 14%;
+      color: color(green);
+    }
+
+    .ltnslbl {
+      margin-top: 20px;
+    }
+
+    .time {
+      font-weight:bold;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .latnss {
+      color: color(green);
+    }
+
+    .col1, .col2, .col3 {
+      min-width: 80px;
+    }
+
+    .col3 {
+      margin-left: 5%;
+
+      .dtlBtn {
+        background-color: grey;
+        padding: 8px 3%;
+        text-align: center;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        color: color(white);
+        margin-top: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .status {
+      font-size: 0.7em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  }
+
+  .empty {
+    background-color: color(white);
+    padding: 50px 0;
+    text-align: center;
+    color: grey;
+  }
+}

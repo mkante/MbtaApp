@@ -1,0 +1,40 @@
+//
+//
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+@import "susy";
+@import "compass/css3/text-shadow";
+@import "breakpoint";
+
+$susy: (
+  columns: 24,  // The number of columns in your grid
+  gutters: 0, // The size of a gutter in relation to a single column
+);
+
+// Variables
+$color: (
+  green: #42b983,
+  black: black,
+  darkgray: #35495e,
+  lime: #43c95f,
+  grey: #eaedf2,
+  white: #fff,
+);
+
+// Color
+@function color($val) {
+  @return map-get($color, $val);
+}
+
+body {
+  font-family: Arial;
+}
+
+// Fonts
+$font-dir: '/static/fonts';
+@import 'partials/font-awesome';
+@import 'partials/breakpoints';
+@import 'partials/home';
+@import 'partials/station';
+

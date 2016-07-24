@@ -1,0 +1,37 @@
+// Devices breakpoints
+
+@mixin phone () {
+  $max: 640px;
+
+  @include breakpoint(max-width $max) {
+    @content
+  }
+}
+
+@mixin tablet () {
+  $min: 641px;
+  $max: 1024px;
+
+  @include breakpoint($min $max) {
+    @content
+  }
+}
+
+@mixin desktop () {
+  $min: 1025px;
+  $max: 1090px;
+  //$max: 1024px;
+
+  @include breakpoint(min-width $min) {
+    @content
+  }
+}
+
+@mixin tv () {
+  $min: 1091px;
+  //$max: 1024px;
+
+  @include breakpoint(min-width $min) {
+    @content
+  }
+}
