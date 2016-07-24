@@ -3422,43 +3422,55 @@ body {
 }
 /* line 32, ../../compass/sass/partials/_station.scss */
 [station-comp] .header-w .logo-w {
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   font-weight: bold;
+  z-index: 13;
 }
-/* line 37, ../../compass/sass/partials/_station.scss */
+/* line 40, ../../compass/sass/partials/_station.scss */
 [station-comp] .header-w .icon {
-  font-size: 2em;
+  font-size: 4em;
   padding: 10px;
   cursor: pointer;
+  z-index: 13;
+  position: absolute;
+  top: 20px;
+  left: 30px;
 }
-/* line 42, ../../compass/sass/partials/_station.scss */
+/* line 49, ../../compass/sass/partials/_station.scss */
 [station-comp] .header-w .text {
   color: #fff;
 }
-/* line 46, ../../compass/sass/partials/_station.scss */
+/* line 53, ../../compass/sass/partials/_station.scss */
 [station-comp] .header-w .sttion-w {
+  position: absolute;
   text-align: center;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
 }
-/* line 49, ../../compass/sass/partials/_station.scss */
+/* line 61, ../../compass/sass/partials/_station.scss */
 [station-comp] .header-w .sttion-w .sttion-name {
   color: #35495e;
   font-weight: bold;
   font-size: 1.8em;
   margin: 10px auto;
 }
-/* line 58, ../../compass/sass/partials/_station.scss */
+/* line 70, ../../compass/sass/partials/_station.scss */
 [station-comp] .schdl-lst, [station-comp] .loading-w {
   margin: 0 auto;
   margin-top: 170px;
   max-width: 600px;
   padding-bottom: 30px;
 }
-/* line 66, ../../compass/sass/partials/_station.scss */
+/* line 78, ../../compass/sass/partials/_station.scss */
 [station-comp] .loading-w {
   padding-top: 40px;
   text-align: center;
 }
-/* line 71, ../../compass/sass/partials/_station.scss */
+/* line 83, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] {
   display: -webkit-flex;
   display: flex;
@@ -3466,13 +3478,13 @@ body {
   margin-top: 10px;
   min-height: 120px;
 }
-/* line 78, ../../compass/sass/partials/_station.scss */
+/* line 90, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] .label {
   color: grey;
   font-size: 0.8em;
   margin-bottom: 5px;
 }
-/* line 84, ../../compass/sass/partials/_station.scss */
+/* line 96, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] .left-w {
   padding: 10px 3%;
   border-right: 1px solid #eaedf2;
@@ -3480,12 +3492,12 @@ body {
   width: 20%;
   position: relative;
 }
-/* line 91, ../../compass/sass/partials/_station.scss */
+/* line 103, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] .left-w .name {
   font-weight: bold;
   font-size: 1em;
 }
-/* line 96, ../../compass/sass/partials/_station.scss */
+/* line 108, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] .left-w .trck-w {
   background-color: black;
   color: #fff;
@@ -3496,7 +3508,7 @@ body {
   font-size: 0.8em;
   width: 40%;
 }
-/* line 106, ../../compass/sass/partials/_station.scss */
+/* line 118, ../../compass/sass/partials/_station.scss */
 [station-comp] [schedule-item] .left-w .trck {
   font-weight: bold;
   font-size: 1.2em;
@@ -3504,41 +3516,41 @@ body {
   right: 10%;
   top: 8px;
 }
-/* line 116, ../../compass/sass/partials/_station.scss */
+/* line 128, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w {
   padding: 10px 3%;
   display: -webkit-flex;
   display: flex;
 }
-/* line 120, ../../compass/sass/partials/_station.scss */
+/* line 132, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .arrow {
   margin: 30px 24% 0 14%;
   color: #42b983;
 }
-/* line 125, ../../compass/sass/partials/_station.scss */
+/* line 137, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .ltnslbl {
   margin-top: 20px;
 }
-/* line 129, ../../compass/sass/partials/_station.scss */
+/* line 141, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .time {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9em;
   margin-top: 10px;
 }
-/* line 136, ../../compass/sass/partials/_station.scss */
+/* line 148, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .latnss {
   color: #42b983;
 }
-/* line 140, ../../compass/sass/partials/_station.scss */
+/* line 152, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .col1, [station-comp] .right-w .col2, [station-comp] .right-w .col3 {
   min-width: 80px;
 }
-/* line 144, ../../compass/sass/partials/_station.scss */
+/* line 156, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .col3 {
   margin-left: 5%;
 }
-/* line 147, ../../compass/sass/partials/_station.scss */
+/* line 159, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .col3 .dtlBtn {
   background-color: grey;
   padding: 8px 3%;
@@ -3549,13 +3561,13 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
-/* line 159, ../../compass/sass/partials/_station.scss */
+/* line 171, ../../compass/sass/partials/_station.scss */
 [station-comp] .right-w .status {
   font-size: 0.7em;
   font-weight: bold;
   margin-top: 10px;
 }
-/* line 167, ../../compass/sass/partials/_station.scss */
+/* line 179, ../../compass/sass/partials/_station.scss */
 [station-comp] .empty {
   background-color: #fff;
   padding: 50px 0;
